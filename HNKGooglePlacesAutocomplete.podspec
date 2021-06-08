@@ -24,7 +24,7 @@ Pod::Spec.new do |s|
 
   s.frameworks = 'CoreLocation'
 
-  s.dependency "AFNetworking", "2.5.4"
+  s.dependency "AFNetworking", "4.0.1"
   s.dependency "Mantle", "~> 1.5"
 
 end
