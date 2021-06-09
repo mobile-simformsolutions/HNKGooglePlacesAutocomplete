@@ -21,15 +21,15 @@ PODS:
     - AFNetworking/NSURLConnection
     - AFNetworking/NSURLSession
   - HNKGooglePlacesAutocomplete (1.0.0):
-    - AFNetworking (= 2.5.4)
+    - AFNetworking
     - HNKGooglePlacesAutocomplete/Models (= 1.0.0)
     - Mantle (~> 1.5)
   - HNKGooglePlacesAutocomplete/Models (1.0.0):
-    - AFNetworking (= 2.5.4)
+    - AFNetworking
     - HNKGooglePlacesAutocomplete/Models/Networking (= 1.0.0)
     - Mantle (~> 1.5)
   - HNKGooglePlacesAutocomplete/Models/Networking (1.0.0):
-    - AFNetworking (= 2.5.4)
+    - AFNetworking
     - Mantle (~> 1.5)
   - Kiwi (2.4.0)
   - Mantle (1.5.8):
@@ -52,10 +52,10 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   AFNetworking: 05edc0ac4c4c8cf57bcf4b84be5b0744b6d8e71e
-  HNKGooglePlacesAutocomplete: df24f7b3d2eeca22f5b3db80bd70f0e160e605d8
+  HNKGooglePlacesAutocomplete: d4fc6390c1c6e36c8099f141373981ec7ca3feac
   Kiwi: f49c9d54b28917df5928fe44968a39ed198cb8a8
   Mantle: f03b2b606c3f0cabd80214ad8a2fed6b464a7359
 
 PODFILE CHECKSUM: e726fc8dc6a5d7ba98e29d5248da4524b27f1544
 
-COCOAPODS: 1.8.4
+COCOAPODS: 1.10.0
