@@ -111,7 +111,7 @@ static NSString *const kHNKDemoSearchResultsCellIdentifier = @"HNKDemoSearchResu
     }
 }
 
-- (BOOL)searchDisplayController:(UISearchDisplayController *)controller
+- (BOOL)searchDisplayController:(UISearchController *)controller
     shouldReloadTableForSearchString:(NSString *)searchString
 {
     [self handleSearchForSearchString:searchString];

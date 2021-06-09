@@ -88,19 +88,16 @@ static AFHTTPSessionManager *httpSessionManager = nil;
     parameters:(NSDictionary *)parameters
     completion:(void (^)(id responseObject, NSError *))completion {
   NSString *urlString = [self urlStringFromPath:path];
-
-  [httpSessionManager GET:urlString
-      parameters:parameters
-      success:^(NSURLSessionDataTask *task, id responseObject) {
+    [httpSessionManager GET:urlString parameters: parameters headers: nil progress: nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         if (completion) {
-          completion(responseObject, nil);
+            completion(responseObject, nil);
         }
-      }
-      failure:^(NSURLSessionDataTask *task, NSError *error) {
+    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         if (completion) {
-          completion(nil, error);
+            completion(nil, error);
         }
-      }];
+          NSLog(@"getDeviceScanResults: failure: %@", error.localizedDescription);
+    }];
 }
 
 #pragma mark - Helpers
